@@ -1,0 +1,45 @@
+header {
+	height: 50px;
+	width: 100%;
+	background-color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items:  center;
+	position:  fixed;
+	top:  0;
+	left:  0;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	font-family: "Raleway", sans-serif;
+	z-index: 30;
+}
+
+#logo {
+	margin-left:  7.5px;
+	font-weight:  100;
+	font-size:  22px;
+	letter-spacing:  -1px;
+	color: green;
+}
+
+#menu {
+	margin-right:  5px;
+}
+
+#chip {
+	position: fixed;
+	top:  0;
+	left:  calc(50% - 35px);
+	width:  70px;
+	height:  70px;
+	border-radius: 50%;
+	background-color:  green;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#chip p {
+	font-size:  15px;
+	text-align: center;
+	color: #fff;
+}

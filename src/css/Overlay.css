@@ -1,0 +1,134 @@
+.inputOverlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width:  100%;
+	height:  100%;
+	z-index: 1000;
+	display: flex;
+	overflow: hidden;
+	color:  #fff;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+/* 	display: none; */
+	font-family: "Raleway", sans-serif;
+	background: #141E30; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #141E30 , #243B55); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #141E30 , #243B55); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+	transition-duration: 0.5s;   
+	transform-origin: 100% 50%;
+	transition-delay: 0s;
+}
+.inputOverlay .centering {
+	width:  100%;
+	display: flex; 
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	// margin-top: 2.5vh;
+}
+.inputOverlay h3 {
+	color: #fff;
+	margin: 0;
+	font-family: "Raleway", sans-serif;
+	text-align: center;
+	// width: 85%;
+	font-size: 1.4em;
+	transition-duration: 0.3s; 
+	transition-delay: 0.75s;  
+}
+.inputOverlay input {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 80%;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 300px;
+	border-radius: 0px;
+	// background: #fff;
+	color: #fff;
+	height: 55px;
+	border: none;
+	border: 2px solid #fff;
+	background: #141E30 ;
+	outline: none;
+	margin: 1.5em auto 1.5em auto;
+	text-align: center;
+	font-size: 1.35em;
+	position: relative;
+	font-family:  "Raleway", sans-serif;
+	transition-duration: 0.3s;  
+	transition-delay: 0.5s;  
+}
+.inputOverlay button {
+	height: 45px;
+	width: 140px;
+	background: transparent;
+	border: 2px solid #fff;
+	outline: none;
+	color: #fff;
+	position: relative;
+	overflow: hidden;
+	font-family:  "Raleway", sans-serif;
+	font-size: 1.2em;
+	transition-duration: 0.3s; 
+	transition-delay: 0.75s;    
+	margin-top: 0.5em;
+}
+.inputOverlay button::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 0%;
+	width: 100%;
+	background-color: #fff;
+	-webkit-transition-duration: 0.25s;
+		transition-duration: 0.25s;
+}
+.inputOverlay button::before {
+	content: "GO!";
+	position: absolute;
+	top: 10px;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 2;
+	color: #000;
+	opacity: 0;
+	transform: translateY(80%);
+	// background-color: blue;
+	-webkit-transition-duration: 0.25s;
+		transition-duration: 0.25s;
+}
+.inputOverlay button:hover::after {
+	height: 100%;
+}
+.inputOverlay button:hover::before {
+	opacity: 1;
+	transform: translateX(0%);
+}
+
+.byeBye {
+	transform: scaleX(0);
+	transition-delay:  0.5s;
+}
+.byeBye h3 {
+	transform: translateY(-100%);
+	opacity: 0;
+	transition-delay: 0.25s
+}
+.byeBye button {
+	transform: translateY(100%);
+	opacity:  0;
+	-webkit-transition-delay: 0.25s;
+		transition-delay: 0.25s;
+}
+.byeBye input {
+	transform: scaleX(0);
+	transition-delay:  0s;
+	/* opacity:  0; */
+}

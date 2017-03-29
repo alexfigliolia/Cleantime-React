@@ -9,11 +9,11 @@ $scale: 0.8; // icon scale 68/68 default
  }
 
 #hamburger {
-  transform: scaleX(0);
+  // transform: scaleX(0);
   transform-origin: 0% 50%;
   cursor: pointer;
 /*   -webkit-transform: scale(0.65) translateY(-50px); */
-    transform: scale(0.65) translateY(-80px);
+    // transform: scale(0.65) translateY(-80px);
 /*   margin: 40px auto; */
   position: fixed;
   top: -6.5px;
@@ -49,7 +49,7 @@ $scale: 0.8; // icon scale 68/68 default
 }
 
 #hamburger path, line {
-  stroke: green;
+  // stroke: green;
   stroke-linecap: round;
 }
 
@@ -70,6 +70,13 @@ $scale: 0.8; // icon scale 68/68 default
     transition: all 0.75s ease; 
 }
 
+.hamburglar{
+  transform: scale(0.65) translateY(-80px);
+}
+
+.hamburglar.h-show{
+  transform: scale(0.65) translateY(0px);
+}
 
 /* // End values (animation done by transitions) */
 /* .hamburglar.is-closed { */

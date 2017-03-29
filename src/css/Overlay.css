@@ -11,7 +11,6 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-/* 	display: none; */
 	font-family: "Raleway", sans-serif;
 	background: #141E30; /* fallback for old browsers */
 	background: -webkit-linear-gradient(to left, #141E30 , #243B55); /* Chrome 10-25, Safari 5.1-6 */
@@ -26,7 +25,17 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	// margin-top: 2.5vh;
+	margin-top: 4.5vh;
+	padding: 0;
+}
+.inputOverlay .startup {
+	width:  100%;
+	display: flex; 
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 0;
+	margin-top: -5vh;
 }
 .inputOverlay h3 {
 	color: #fff;
@@ -100,7 +109,6 @@
 	color: #000;
 	opacity: 0;
 	transform: translateY(80%);
-	// background-color: blue;
 	-webkit-transition-duration: 0.25s;
 		transition-duration: 0.25s;
 }
@@ -130,5 +138,4 @@
 .byeBye input {
 	transform: scaleX(0);
 	transition-delay:  0s;
-	/* opacity:  0; */
 }

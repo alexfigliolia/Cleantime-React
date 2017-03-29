@@ -5,9 +5,9 @@ class Header extends React.Component {
 	render() {
 		return(
 			<header>
-				<h1 id='logo'>CleanTime</h1>
-				<div id="chip">
-					<p id='chipT'>Green<br/>Chip</p>
+				<h1 id='logo' style={{color: this.props.burgerColor}}>CleanTime</h1>
+				<div id="chip" style={{background: this.props.chipColor}}>
+					<p id='chipT' style={{color: this.props.textColor}}>{this.props.chipText1}<br/>{this.props.chipText2}</p>
 				</div>
 			</header>
 		)

@@ -30,7 +30,7 @@
 	align-items: center;
 	flex-direction: column;
 	z-index: 2;
-	margin-top: -15vh;
+	// margin-top: -15vh;
 }
 .banner h1 {
 	font-size: 20vh;
@@ -47,6 +47,7 @@
 		text-fill-color: transparent;
 	transition-duration: 0.2s;
 }
+
 .banner h1::after {
 	content:  "";
 	position:  absolute;
@@ -56,6 +57,17 @@
 	height: 1.5px;
 	background-color: #fff;
 }
+
+.time-show {
+	transform: translateX(0px);
+	opacity: 1;
+}
+
+.time-hide {
+	transform: translateX(-100px);
+	opacity: 0;
+}
+
 .banner h2 {
 	font-size: 6vh;
 	font-weight: 800;
@@ -71,6 +83,16 @@
 	 	text-fill-color: transparent;
 	 font-family: "Raleway", sans-serif;
 	 transition-duration: 0.2s;
+}
+
+.unit-show {
+	transform: translateX(0px);
+	opacity: 1;
+}
+
+.unit-hide {
+	transform: translateX(100px);
+	opacity: 0;
 }
 
 .bottom {

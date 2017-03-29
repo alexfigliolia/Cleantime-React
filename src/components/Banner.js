@@ -7,8 +7,8 @@ class Banner extends React.Component {
 		return(
 			<div className="banner">
 				<div className="centering">
-					<h1 id='time'>130</h1>
-					<h2 id='unit'>Days</h2>
+					<h1 id='time' className={this.props.timeClasses}>{this.props.cleantime}</h1>
+					<h2 id='unit' className={this.props.unitClasses}>{this.props.unit}</h2>
 				</div>
 			</div>
 		)

@@ -27,6 +27,7 @@
 	flex-direction: column;
 	margin-top: 4.5vh;
 	padding: 0;
+	transition: margin 0.2s;
 }
 .inputOverlay .startup {
 	width:  100%;

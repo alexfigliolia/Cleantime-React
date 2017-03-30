@@ -22,12 +22,13 @@ class App extends Component {
       "burgerColor" : "gray",
       "date" : 0,
       "soberDate" : 0,
+      "chipClasses" : "chip-hide",
       "centerClasses": "centering startup",
       "overlayClasses" : "overlay inputOverlay",
       "burgerClasses" : "hamburglar is-open",
       "burgerToggle" : true,
-      "timeClasses" : "time-show",
-      "unitClasses" : "unit-show"
+      "timeClasses" : "time-hide",
+      "unitClasses" : "unit-hide"
     }
   	this.handleTouchMove.bind(this);
   }
@@ -54,6 +55,13 @@ class App extends Component {
     });
     this.getUnit(diffDays);
     this.getColor(diffDays);
+    setTimeout(function() { 
+      this.setState({
+        "chipClasses" : "chip-show",
+        "timeClasses" : "time-show",
+        "unitClasses" : "unit-show"
+      });
+    }.bind(this), 800);
   }
 
   getUnit(diffDays) {
@@ -139,7 +147,10 @@ class App extends Component {
       this.setState({
         "overlayClasses" : "overlay inputOverlay",
         "burgerClasses" : "hamburglar h-show is-closed",
-        "burgerToggle" : false
+        "burgerToggle" : false,
+        "chipClasses" : "chip-hide",
+        "timeClasses" : "time-hide",
+        "unitClasses" : "unit-hide"
       });
     } else {
       this.setState({
@@ -147,6 +158,13 @@ class App extends Component {
         "burgerClasses" : "hamburglar h-show is-open",
         "burgerToggle" : true
       });
+      setTimeout(function() { 
+        this.setState({
+          "chipClasses" : "chip-show",
+          "timeClasses" : "time-show",
+          "unitClasses" : "unit-show"
+        });
+      }.bind(this), 800);
     }
   }
 
@@ -165,13 +183,13 @@ class App extends Component {
           "unit" : "Day"
         })
       }
-    }.bind(this), 200);
+    }.bind(this), 300);
     setTimeout(function() { 
       this.setState({
         "timeClasses" : "time-show",
         "unitClasses" : "unit-show"
       });
-    }.bind(this), 200);
+    }.bind(this), 300);
   }
 
   handleMonths(){
@@ -189,13 +207,13 @@ class App extends Component {
           "unit" : "Month"
         })
       }
-    }.bind(this), 200);
+    }.bind(this), 300);
     setTimeout(function() { 
       this.setState({
         "timeClasses" : "time-show",
         "unitClasses" : "unit-show"
       });
-    }.bind(this), 200);
+    }.bind(this), 300);
   }
   
   handleYears() {
@@ -213,13 +231,13 @@ class App extends Component {
           "unit" : "Year"
         })
       }
-    }.bind(this), 200);
+    }.bind(this), 300);
     setTimeout(function() { 
       this.setState({
         "timeClasses" : "time-show",
         "unitClasses" : "unit-show"
       });
-    }.bind(this), 200);
+    }.bind(this), 300);
   }
 
   render() {
@@ -236,7 +254,8 @@ class App extends Component {
           chipText2={this.state.chipText2} 
           textColor={this.state.textColor} 
           chipColor={this.state.chipColor} 
-          burgerColor={this.state.burgerColor} />
+          burgerColor={this.state.burgerColor}
+          chippy={this.state.chipClasses} />
 
         <Burger 
           classes={this.state.burgerClasses} 

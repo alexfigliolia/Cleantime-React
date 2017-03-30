@@ -45,7 +45,7 @@
 		background-clip: text;
 	-webkit-text-fill-color: transparent;
 		text-fill-color: transparent;
-	transition-duration: 0.2s;
+	transition-duration: 0.3s;
 }
 
 .banner h1::after {
@@ -61,11 +61,13 @@
 .time-show {
 	transform: translateX(0px);
 	opacity: 1;
+	transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .time-hide {
 	transform: translateX(-100px);
 	opacity: 0;
+	transition-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
 
 .banner h2 {
@@ -82,17 +84,19 @@
 	 -webkit-text-fill-color: transparent;
 	 	text-fill-color: transparent;
 	 font-family: "Raleway", sans-serif;
-	 transition-duration: 0.2s;
+	 transition-duration: 0.3s;
 }
 
 .unit-show {
 	transform: translateX(0px);
 	opacity: 1;
+	transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .unit-hide {
 	transform: translateX(100px);
 	opacity: 0;
+	transition-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
 
 .bottom {

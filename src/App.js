@@ -226,7 +226,7 @@ class App extends Component {
         "days" :  this.state.years,
         "unit" : "Years"
       }); 
-      if(this.state.months === 1) {
+      if(this.state.years === 1) {
         this.setState({
           "unit" : "Year"
         })

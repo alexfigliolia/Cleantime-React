@@ -47,7 +47,7 @@ header {
 .chip-show {
 	transform: scale(1);
 	transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-	transition-delay: 0.45s;
+	transition-delay: 0.35s;
 	transition-duration: 0.4s;
 }
 #chip p {
